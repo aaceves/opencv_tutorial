@@ -8,22 +8,28 @@ int main(int argc, char **argv){
     // -------------------------- INICIA CODIGO DE OPENCV --------------------------
     cv::Mat image;
     cv::Mat gray_image;
+
     image = cv::imread("/home/kinetic/catkin_ws/src/opencv_tutorial/img/red_panda.jpg"); 
-    if (!image.data) {
-        std::cout << "Error al cargar imagen: red_panda.jpg"<< std::endl;
+    if (image.empty()) { // or (!image.data)
+        std::cout << "Error al cargar imagen."<< std::endl;
         exit(1);
     }
-    cv::cvtColor(image, gray_image, cv::COLOR_BGR2GRAY);
+    std::cout << "Height : " << image.rows << std::endl;  // or image.size().height
+    std::cout << "Width : " << image.cols << std::endl;  // or image.size().width
+
+    cv::namedWindow("Red panda");         // Crea una ventana con un nombre específico
+    cv::moveWindow("Red panda", 100,100); // Mueve la ventana a la posición x,y
+    cv::namedWindow("Gray panda");
+    cv::moveWindow("Gray panda", 200,100);
+
+    cv::cvtColor(image, gray_image, cv::COLOR_BGR2GRAY); // Convierte de BGR a GRAY
     cv::imshow("Red panda", image);
     cv::imshow("Gray panda", gray_image);
     std::cout << "Hit ENTER to close window images." << std::endl;
     cv::waitKey(0);
     cv::destroyAllWindows();
-    
-    //std::cout << "Dimensión de la variable image: " << image.shape << std::endl;
-    //std::cout << "Dimensión de la variable gray_image: " << gray_image.shape << std::endl;
 
-    cv::imwrite("/home/kinetic/catkin_ws/src/opencv_tutorial/img/gray_panda2.jpg", gray_image);
+    cv::imwrite("/home/kinetic/catkin_ws/src/opencv_tutorial/img/gray_panda.jpg", gray_image);
     // -------------------------- TERMINA CODIGO DE OPENCV --------------------------
     ros::spinOnce();
     return 0;
