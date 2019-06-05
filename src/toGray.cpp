@@ -14,12 +14,12 @@ int main(int argc, char **argv){
         exit(1);
     }
     cv::imshow("Red panda", image);
-    cv::imshow("Gray panda", gray_image)
+    cv::imshow("Gray panda", gray_image);
     cv::waitKey(0);
     cv::destroyAllWindows();
-    gray_image = cv::cvtColor(image, cv::COLOR_BGR2GRAY)
-    std::cout << "Dimensión de la variable image: " << image.shape << std::endl;
-    std::cout << "Dimensión de la variable gray_image: " << gray_image.shape << std::endl;
+    cv::cvtColor(image, gray_image, cv::COLOR_BGR2GRAY);
+    //std::cout << "Dimensión de la variable image: " << image.shape << std::endl;
+    //std::cout << "Dimensión de la variable gray_image: " << gray_image.shape << std::endl;
     cv::imwrite("gray_panda.jpg", gray_image);
     // -------------------------- TERMINA CODIGO DE OPENCV --------------------------
     ros::spinOnce();
