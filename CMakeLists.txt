@@ -13,3 +13,7 @@ include_directories( ${OpenCV_INCLUDE_DIRS}
 add_executable(showimage src/toGray.cpp)
 target_link_libraries(showimage ${catkin_LIBRARIES}
                                 ${OpenCV_LIBRARIES})
+
+add_executable(showimage src/toHSI.cpp)
+target_link_libraries(showimage ${catkin_LIBRARIES}
+                                ${OpenCV_LIBRARIES})
