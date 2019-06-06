@@ -14,6 +14,6 @@ add_executable(showimage src/toGray.cpp)
 target_link_libraries(showimage ${catkin_LIBRARIES}
                                 ${OpenCV_LIBRARIES})
 
-add_executable(showimage src/toHSI.cpp)
-target_link_libraries(showimage ${catkin_LIBRARIES}
+add_executable(showimage1 src/simpleColorSegmentation.cpp)
+target_link_libraries(showimage1 ${catkin_LIBRARIES}
                                 ${OpenCV_LIBRARIES})
