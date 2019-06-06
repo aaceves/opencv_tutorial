@@ -39,7 +39,7 @@ static void on_high_V_thresh_trackbar(int, void *)
 }
 
 int main(int argc, char **argv){
-    ros::init(argc, argv, "showimageHSV");
+    ros::init(argc, argv, "showimage1");
     ros::NodeHandle n;
     ros::Rate loop_rate(0.5);
     // -------------------------- INICIA CODIGO DE OPENCV --------------------------
