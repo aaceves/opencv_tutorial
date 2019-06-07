@@ -31,12 +31,12 @@ $ source devel/setup.bash
 ```
 El proceso de compilación debe terminar sin errores. 
 
-Se habrán dado de alta los siguientes nodos
+Se habrán dado de alta los siguientes nodos:
 
-| node name | Descripción | file.cpp |
+| <node_name> | Descripción | file.cpp |
 | --- | --- | --- |
 | showimage | Lee un archivo jpg y lo pasa a grises | toGray.cpp | 
-| shoeimage1 | Segmenta la imagen de la webcam en HSV | simpleColorSegmentation.cpp |
+| showimage1 | Segmenta la imagen de la webcam en HSV | simpleColorSegmentation.cpp |
 
 
 ## Ejemplo de ejecución
@@ -44,7 +44,7 @@ Se habrán dado de alta los siguientes nodos
 En dos Terminales diferentes ejecutar cada una de las siguientes lineas:
 ```
 $ roscore
-$ rosrun opencv_tutorial <nodo>
+$ rosrun opencv_tutorial <nodo_name>
 ```
 
 
