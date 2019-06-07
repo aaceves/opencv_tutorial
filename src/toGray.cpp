@@ -2,7 +2,7 @@
 #include <opencv2/opencv.hpp>
 
 int main(int argc, char **argv){
-    ros::init(argc, argv, "showimage");
+    ros::init(argc, argv, "showGray");
     ros::NodeHandle n;
     ros::Rate loop_rate(0.5);
     // -------------------------- INICIA CODIGO DE OPENCV --------------------------
@@ -17,6 +17,8 @@ int main(int argc, char **argv){
     }
     std::cout << "Height : " << image.rows << std::endl;  // or image.size().height
     std::cout << "Width : " << image.cols << std::endl;  // or image.size().width
+    std::cout << "Number of color channles : " << image.channels() << std::endl; 
+    std::cout << "Data type : " << image.depth() << std::endl; 
 
     cv::namedWindow("Red panda");         // Crea una ventana con un nombre específico
     cv::moveWindow("Red panda", 100,100); // Mueve la ventana a la posición x,y
