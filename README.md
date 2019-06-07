@@ -52,8 +52,9 @@ $ rosrun opencv_tutorial <nodo_name>
 Este paquete está originalmente presentado en el wiki de ROS en la sección de Beginners Level. Sin embargo fue ajustado ligeramente por el Dr. Alejandro Aceves-López para que sea más comprensible a los programadores nuevos de ROS.
 
 ## Referencias
-1. Sergio Cantu, “OpenCV with Python 3: Tutorial 1-34”, [Online]. Available: https://pysource.com/author/admin, [Accessed: 05-Jun-2018].
-2. Anónimo, "OpenCV Tutorials ", [Online]. Available: https://docs.opencv.org/3.2.0/d9/df8/tutorial_root.html, [Accessed: 05-Jun-2018].
-3. Fernando Shermal, "OpenCV Tutorial C++ ", [Online]. Available: https://www.opencv-srf.com/p/introduction.html, [Accessed: 05-Jun-2018].
-4. OpenCV Team, “OpenCV - Open Source Computer Vision Library”, [Online]. Available: https://opencv.org/, [Accessed: 05-Jun-2018].
-5. Alexander Mordvintsev and Abid Rahman K, “OpenCV-Python Tutorials”, [Online]. Available: https://docs.opencv.org/3.1.0/d6/d00/tutorial_py_root.html, [Accessed: 18-Dic-2018].
+
+1. Anónimo, "OpenCV Tutorials ", [Online]. Available: https://docs.opencv.org/3.2.0/d9/df8/tutorial_root.html, [Accessed: 05-Jun-2018].
+2. Fernando Shermal, "OpenCV Tutorial C++ ", [Online]. Available: https://www.opencv-srf.com/p/introduction.html, [Accessed: 05-Jun-2018].
+3. Sergio Cantu, “Loading images – OpenCV 3.4 with python 3 Tutorial 1-37”, [Online]. Available: https://pysource.com/2018/01/20/loading-images-opencv-3-4-with-python-3-tutorial-1/#, [Accessed: 05-Jun-2019].
+4. Sergio Cantu, “Computer Vision Made Simple”, [Online]. Available: https://pysource.com/, [Accessed: 05-Jun-2019].
+5. OpenCV Team, “OpenCV - Open Source Computer Vision Library”, [Online]. Available: https://opencv.org/, [Accessed: 05-Jun-2018].
