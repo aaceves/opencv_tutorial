@@ -50,7 +50,7 @@ $ rosrun opencv_tutorial <node_name>
 
 
 ## Autores y colaboradores
-Este paquete está originalmente presentado en el wiki de ROS en la sección de Beginners Level. Sin embargo fue ajustado ligeramente por el Dr. Alejandro Aceves-López para que sea más comprensible a los programadores nuevos de ROS.
+Este paquete fue desarrollado a partir de programas de OpenCV disponibles en Internet, pero ajustados ligeramente por el Dr. Alejandro Aceves-López para que sean más comprensibles a los programadores nuevos de ROS.
 
 ## Referencias
 
