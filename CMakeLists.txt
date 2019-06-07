@@ -16,4 +16,9 @@ target_link_libraries(showimage ${catkin_LIBRARIES}
 
 add_executable(showimage1 src/simpleColorSegmentation.cpp)
 target_link_libraries(showimage1 ${catkin_LIBRARIES}
-                                ${OpenCV_LIBRARIES})
+                                 ${OpenCV_LIBRARIES})
+                                 
+add_executable(showimage2 src/detectEdges.cpp)
+target_link_libraries(showimage2 ${catkin_LIBRARIES}
+                                 ${OpenCV_LIBRARIES})
+                                 
