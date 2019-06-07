@@ -15,7 +15,7 @@ int main(int argc, char **argv){
     cv::Mat frame, edges;
     while (true) {
         cap >> frame;
-        cv::cvtColor(frame, edges, COLOR_BGR2GRAY);
+        cv::cvtColor(frame, edges, cv::COLOR_BGR2GRAY);
         cv::GaussianBlur(edges, edges, cv::Size(7,7), 1.5, 1.5);
         cv::Canny(edges, edges, 0, 30, 3);
         cv::imshow("edges", edges);
