@@ -39,7 +39,7 @@ static void on_high_V_thresh_trackbar(int, void *)
 }
 
 int main(int argc, char **argv){
-    ros::init(argc, argv, "showimage1");
+    ros::init(argc, argv, "showSegmentation");
     ros::NodeHandle n;
     ros::Rate loop_rate(0.5);
     // -------------------------- INICIA CODIGO DE OPENCV --------------------------
@@ -59,6 +59,7 @@ int main(int argc, char **argv){
     cv::createTrackbar("High V", window_detection_name, &high_V, high_V, on_high_V_thresh_trackbar);
     
     cv::Mat frame, frame_HSV, frame_threshold;
+    std::cout << "Hit ESC on web-image to close node." << std::endl;
 
     while (true) {
         cap >> frame;
@@ -71,8 +72,9 @@ int main(int argc, char **argv){
         cv::imshow(window_capture_name, frame);
         cv::imshow(window_detection_name, frame_threshold);
         char key = (char) cv::waitKey(30);
-        if (key == 27) exit(2);
-    }    
+        if (key == 27) break;
+    }
+    cv::destroyAllWindows();
     // -------------------------- TERMINA CODIGO DE OPENCV --------------------------
     ros::spinOnce();
     return 0;
