@@ -43,7 +43,7 @@ int main(int argc, char **argv){
     ros::NodeHandle n;
     ros::Rate loop_rate(0.5);
     // -------------------------- INICIA CODIGO DE OPENCV --------------------------
-    // Based from: https://docs.opencv.org/master/da/d97/tutorial_threshold_inRange.html
+    // Based on: https://docs.opencv.org/master/da/d97/tutorial_threshold_inRange.html
     cv::VideoCapture cap(0);
     cv::namedWindow(window_capture_name);
     cv::moveWindow(window_capture_name, 100,100);
