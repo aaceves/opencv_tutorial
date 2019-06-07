@@ -37,6 +37,7 @@ Se habrán dado de alta los siguientes nodos:
 | --- | --- | --- |
 | showimage | Lee un archivo jpg y lo pasa a grises | toGray.cpp | 
 | showimage1 | Segmenta la imagen de la webcam en HSV | simpleColorSegmentation.cpp |
+| showimage2 | Busca bordes de la imagen de la webcam| detectEdges.cpp |
 
 
 ## Ejemplo de ejecución
