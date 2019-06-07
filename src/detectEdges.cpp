@@ -13,6 +13,7 @@ int main(int argc, char **argv){
         return 1;
     }
     cv::Mat frame, edges;
+    std::cout << "Hit ESC on web-image to close node" << std::endl;
     while (true) {
         cap >> frame;
         cv::cvtColor(frame, edges, cv::COLOR_BGR2GRAY);
