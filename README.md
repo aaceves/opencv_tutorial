@@ -35,10 +35,10 @@ Se habrán dado de alta los siguientes nodos:
 
 | <node_name> | Descripción | file.cpp |
 | --- | --- | --- |
-| showimage | Lee un archivo jpg y lo pasa a grises | toGray.cpp | 
-| showimage1 | Segmenta la imagen de la webcam en HSV | simpleColorSegmentation.cpp |
-| showimage2 | Busca bordes de la imagen de la webcam| detectEdges.cpp |
-| showimage3 | Dibuja geometrías sobre una imagen| drawOnImage.cpp |
+| showGray | Lee un archivo jpg y lo pasa a grises | toGray.cpp | 
+| showSegmentation | Segmenta la imagen de la webcam en HSV | simpleColorSegmentation.cpp |
+| showEdges | Busca bordes de la imagen de la webcam| detectEdges.cpp |
+| showDrawings | Dibuja geometrías sobre una imagen| drawOnImage.cpp |
 
 
 ## Ejemplo de ejecución
