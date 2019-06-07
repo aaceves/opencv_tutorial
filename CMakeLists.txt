@@ -10,18 +10,18 @@ catkin_package(LIBRARIES OpenCV
 include_directories( ${OpenCV_INCLUDE_DIRS}
                      ${catkin_INCLUDE_DIRS})
 
-add_executable(showimage src/toGray.cpp)
-target_link_libraries(showimage ${catkin_LIBRARIES}
+add_executable(showGray src/toGray.cpp)
+target_link_libraries(showGray ${catkin_LIBRARIES}
+                               ${OpenCV_LIBRARIES})
+
+add_executable(showSegmentation src/simpleColorSegmentation.cpp)
+target_link_libraries(showSegmentation ${catkin_LIBRARIES}
+                                       ${OpenCV_LIBRARIES})
+
+add_executable(showEdges src/detectEdges.cpp)
+target_link_libraries(showEdges ${catkin_LIBRARIES}
                                 ${OpenCV_LIBRARIES})
 
-add_executable(showimage1 src/simpleColorSegmentation.cpp)
-target_link_libraries(showimage1 ${catkin_LIBRARIES}
-                                 ${OpenCV_LIBRARIES})
-
-add_executable(showimage2 src/detectEdges.cpp)
-target_link_libraries(showimage2 ${catkin_LIBRARIES}
-                                 ${OpenCV_LIBRARIES})
-
-add_executable(showimage3 src/drawOnImage.cpp)
-target_link_libraries(showimage3 ${catkin_LIBRARIES}
-                                 ${OpenCV_LIBRARIES})
+add_executable(showDrawings src/drawOnImage.cpp)
+target_link_libraries(showDrawings ${catkin_LIBRARIES}
+                                   ${OpenCV_LIBRARIES})
