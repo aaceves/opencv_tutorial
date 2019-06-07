@@ -44,7 +44,7 @@ Se habrán dado de alta los siguientes nodos:
 En dos Terminales diferentes ejecutar cada una de las siguientes lineas:
 ```
 $ roscore
-$ rosrun opencv_tutorial <nodo_name>
+$ rosrun opencv_tutorial <node_name>
 ```
 
 
