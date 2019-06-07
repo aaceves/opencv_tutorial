@@ -2,7 +2,7 @@
 #include <opencv2/opencv.hpp>
 
 int main(int argc, char **argv){
-    ros::init(argc, argv, "showimage3");
+    ros::init(argc, argv, "showDrawings");
     ros::NodeHandle n;
     ros::Rate loop_rate(0.5);
     // -------------------------- INICIA CODIGO DE OPENCV --------------------------
@@ -50,6 +50,7 @@ int main(int argc, char **argv){
 
 
     cv::imshow("Image",image);
+    std::cout << "Hit ENTER to close window images." << std::endl;
     cv::waitKey(0);
     cv::destroyAllWindows();
     // -------------------------- TERMINA CODIGO DE OPENCV --------------------------
