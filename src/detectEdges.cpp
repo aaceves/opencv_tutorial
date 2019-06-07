@@ -6,7 +6,7 @@ int main(int argc, char **argv){
     ros::NodeHandle n;
     ros::Rate loop_rate(0.5);
     // -------------------------- INICIA CODIGO DE OPENCV --------------------------
-    // Based from: https://docs.opencv.org/3.0-beta/modules/videoio/doc/reading_and_writing_video.html
+    // Based on: https://docs.opencv.org/3.0-beta/modules/videoio/doc/reading_and_writing_video.html
     cv::VideoCapture cap(0);
     if(!cap.isOpened())  {
         std::cout << "No se pudo abrir la cámara." << std::endl;
