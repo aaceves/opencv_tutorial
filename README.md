@@ -60,3 +60,4 @@ Este paquete fue desarrollado a partir de programas de OpenCV disponibles en Int
 3. Sergio Cantu, “Loading images – OpenCV 3.4 with python 3 Tutorial 1-37”, [Online]. Available: https://pysource.com/2018/01/20/loading-images-opencv-3-4-with-python-3-tutorial-1/#, [Accessed: 05-Jun-2019].
 4. Sergio Cantu, “Computer Vision Made Simple”, [Online]. Available: https://pysource.com/, [Accessed: 05-Jun-2019].
 5. OpenCV Team, “OpenCV - Open Source Computer Vision Library”, [Online]. Available: https://opencv.org/, [Accessed: 05-Jun-2018].
+6. Satya Mallick, "Learn OpenCV by Examples", [Online]. Available: http://opencvexamples.blogspot.com/p/learning-opencv-functions-step-by-step.html,  [Accessed: 05-Jun-2019].
