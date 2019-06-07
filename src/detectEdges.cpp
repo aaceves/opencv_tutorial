@@ -2,7 +2,7 @@
 #include <opencv2/opencv.hpp>
 
 int main(int argc, char **argv){
-    ros::init(argc, argv, "showimage2");
+    ros::init(argc, argv, "showEdges");
     ros::NodeHandle n;
     ros::Rate loop_rate(0.5);
     // -------------------------- INICIA CODIGO DE OPENCV --------------------------
@@ -21,7 +21,8 @@ int main(int argc, char **argv){
         cv::Canny(edges, edges, 0, 30, 3);
         cv::imshow("edges", edges);
         if (cv::waitKey(30) == 27) break;
-    }    
+    }
+    cv::destroyAllWindows();
     // -------------------------- TERMINA CODIGO DE OPENCV --------------------------
     ros::spinOnce();
     return 0;
