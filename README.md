@@ -1,7 +1,7 @@
 # Tutorial de OpenCV en ROS
 
 ## Descripción general
-Tutorial clásico de OpenCV en C++ en ROS con la intensión de facilitar el trabajo a los nuevos programadores.
+Tutorial de OpenCV escrito en C++ dentro de ROS con la intensión de facilitar el trabajo a los nuevos programadores.
 
 ## Pre-requisitos
 Se considera que la computadora del usuario ya tiene correctamente instalado ROS, GIT y que ya tiene la carpeta de `catkin_ws` correctamente inicializada.
