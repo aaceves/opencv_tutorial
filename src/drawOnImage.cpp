@@ -14,7 +14,7 @@ int main(int argc, char **argv){
     ros::NodeHandle n;
     ros::Rate loop_rate(0.5);
     // -------------------------- INICIA CODIGO DE OPENCV --------------------------
-    // Based from: https://docs.opencv.org/3.2.0/db/d64/tutorial_load_save_image.html
+    // Based on: https://docs.opencv.org/3.2.0/db/d64/tutorial_load_save_image.html
     cv::Mat image;
     cv::Mat gray_image;
 
