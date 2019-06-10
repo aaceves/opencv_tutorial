@@ -41,7 +41,7 @@ Se habrán dado de alta los siguientes nodos:
 | showDrawings | Dibuja geometrías sobre una imagen | drawOnImage.cpp |
 | clickMe | Como definir un simple boton | clickMe.cpp |
 | showHist | Calcular histogramas | ???.cpp |
-| read_save_file | Guardar y leer datos de un archivo | ???.cpp |
+| read_save_file | Guardar y leer datos de un archivo | readWriteFile.cpp |
 | showBlobs | Agrupar pixels conectados | ???.cpp |
 | read_wirte_video | Lee y guarda video | ???.cpp |
 | showSiftFeat | Buscar y mostrar SIFT features | ???.cpp |
