@@ -25,3 +25,7 @@ target_link_libraries(showEdges ${catkin_LIBRARIES}
 add_executable(showDrawings src/drawOnImage.cpp)
 target_link_libraries(showDrawings ${catkin_LIBRARIES}
                                    ${OpenCV_LIBRARIES})
+
+add_executable(clickMe src/clickMe.cpp)
+target_link_libraries(clickMe ${catkin_LIBRARIES}
+                              ${OpenCV_LIBRARIES})
