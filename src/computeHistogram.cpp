@@ -13,7 +13,7 @@ using namespace cv;
 // Based on: http://opencvexamples.blogspot.com/2013/10/histogram-calculation.html
 
 int main(int argc, char **argv) {
-    ros::init(argc, argv, "showDrawings");
+    ros::init(argc, argv, "showHist");
     ros::NodeHandle n;
     ros::Rate loop_rate(0.5);
   // -------------------------- INICIA CODIGO DE OPENCV --------------------------
