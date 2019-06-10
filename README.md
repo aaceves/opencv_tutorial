@@ -40,6 +40,14 @@ Se habrán dado de alta los siguientes nodos:
 | showEdges | Busca bordes de la imagen de la webcam | detectEdges.cpp |
 | showDrawings | Dibuja geometrías sobre una imagen | drawOnImage.cpp |
 | clickMe | Como definir un simple boton | clickMe.cpp |
+| showHist | Calcular histogramas | ???.cpp |
+| read_save_file | Guardar y leer datos de un archivo | ???.cpp |
+| showBlobs | Agrupar pixels conectados | ???.cpp |
+| read_wirte_video | Lee y guarda video | ???.cpp |
+| showSiftFeat | Buscar y mostrar SIFT features | ???.cpp |
+| ballTracking | Buscar pelota | ???.cpp |
+| calibrate | Calibrate camera | ???.cpp |
+| faceDetectionHaas | Buscar HAAS features de caras | ???.cpp |
 
 
 ## Ejemplo de ejecución
