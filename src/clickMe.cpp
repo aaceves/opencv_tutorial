@@ -20,7 +20,7 @@ void callBackFunc(int event, int x, int y, int flags, void* userdata) {
 }
 
 int main(int argc, char **argv) {
-    ros::init(argc, argv, "showDrawings");
+    ros::init(argc, argv, "clickMe");
     ros::NodeHandle n;
     ros::Rate loop_rate(0.5);
     // -------------------------- INICIA CODIGO DE OPENCV --------------------------
