@@ -18,6 +18,10 @@ add_executable(showSegmentation src/simpleColorSegmentation.cpp)
 target_link_libraries(showSegmentation ${catkin_LIBRARIES}
                                        ${OpenCV_LIBRARIES})
 
+add_executable(spaceColors src/differentColorSegmentation.cpp)
+target_link_libraries(spaceColors ${catkin_LIBRARIES}
+                                  ${OpenCV_LIBRARIES})
+
 add_executable(showEdges src/detectEdges.cpp)
 target_link_libraries(showEdges ${catkin_LIBRARIES}
                                 ${OpenCV_LIBRARIES})
