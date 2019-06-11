@@ -37,6 +37,7 @@ Se habrán dado de alta los siguientes nodos:
 | --- | --- | --- |
 | showGray | Lee un archivo jpg y lo pasa a grises | toGray.cpp | 
 | showSegmentation | Segmenta la imagen de la webcam en HSV | simpleColorSegmentation.cpp |
+| spaceColors | Segmenta webcam en diferentes espacios de color | differentColorSegmentation.cpp |
 | showEdges | Busca bordes de la imagen de la webcam | detectEdges.cpp |
 | showDrawings | Dibuja geometrías sobre una imagen | drawOnImage.cpp |
 | clickMe | Como definir un simple boton | clickMe.cpp |
