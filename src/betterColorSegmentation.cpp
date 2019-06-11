@@ -4,94 +4,68 @@
 const std::string window_capture_name = "Original Video";
 const std::string window_detection_name = "Object Detection";
 
+// Based on:  https://www.learnopencv.com/color-spaces-in-opencv-cpp-python/ 
+
 std::string x, y, z;
 int low_x, low_y, low_z;
 int high_x, high_y, high_z;
-int color_space, flag = 0;
-float conv_factor_x= 1, conv_factor_yz= 1;
+int color_space, flag;
+float conv_factor_x, conv_factor_yz;
 
-void HSV()
-{
-	flag = 1;
-	color_space= cv::COLOR_BGR2HSV;
-    x="H";
-    y="S";
-    z="V";
-	low_x = 0; 
-	low_y = 0;
-	low_z = 0;
-	high_x = 360;
-	high_y = 1000;
-	high_z = 1000;
-	conv_factor_x = 0.5; 
-	conv_factor_yz = 0.255;
+void HSV() {
+    flag = 1;
+    color_space= cv::COLOR_BGR2HSV;
+    x = "H"; y = "S"; z = "V";
+    low_x = 0;  low_y = 0; low_z = 0;
+    high_x = 360;  high_y = 1000; high_z = 1000;
+    conv_factor_x  = 0.5; 
+    conv_factor_yz = 0.255;
 }
 
-void YCrCb()
-{
-	color_space= cv::COLOR_BGR2HSV;
-    x="Y";
-    y="Cr";
-    z="Cb";
-	low_x = 0; 
-	low_y = 0;
-	low_z = 0;
-	high_x = 255;
-	high_y = 255;
-	high_z = 255;
+void HLS() {
+    flag = 1;
+    color_space= cv::COLOR_BGR2HLS;
+    x="H"; y="S"; z="I";
+    low_x = 0; low_y = 0; low_z = 0;
+    high_x = 360; high_y = 1000; high_z = 1000;
+    conv_factor_x = 0.5; 
+    conv_factor_yz = 0.255;
 }
 
-void Lab()
-{
-	color_space= cv::COLOR_BGR2Lab;
-    x="L";
-    y="a";
-    z="b";
-	low_x = 0; 
-	low_y = 0;
-	low_z = 0;
-	high_x = 1000;
-	high_y = 255;
-	high_z = 255;
-	conv_factor_x = 0.255; 
-	
+void YCrCb() {
+    flag = 0;
+    color_space= cv::COLOR_BGR2YCrCb;
+    x = "Y"; y = "Cr"; z = "Cb";
+    low_x = 0; low_y = 0; low_z = 0;
+    high_x = 255; high_y = 255; high_z = 255;
+    conv_factor_x  = 1; 
+    conv_factor_yz = 1;
 }
 
-void HSI()
-{
-	flag = 1;
-	color_space= cv::COLOR_BGR2HLS;
-    x="H";
-    y="S";
-    z="I";
-	low_x = 0; 
-	low_y = 0;
-	low_z = 0;
-	high_x = 360;
-	high_y = 1000;
-	high_z = 1000;
-	conv_factor_x = 0.5; 
-	conv_factor_yz = 0.255;
+void Lab() {
+    flag = 0;
+    color_space= cv::COLOR_BGR2Lab;
+    x = "L"; y = "a"; z = "b";
+    low_x = 0; low_y = 0; low_z = 0;
+    high_x = 1000; high_y = 255; high_z = 255;
+    conv_factor_x = 0.255;
+    conv_factor_yz = 1;
 }
 
 
-static void on_low_x_thresh_trackbar(int, void *)
-{
+static void on_low_x_thresh_trackbar(int, void *) {
     if (flag == 0) low_x = std::min(high_x-1, low_x);
     cv::setTrackbarPos("Low "+ x, window_detection_name, low_x);
 }
-static void on_high_x_thresh_trackbar(int, void *)
-{
+static void on_high_x_thresh_trackbar(int, void *) {
     if (flag == 0) high_x = std::max(high_x, low_x+1);
     cv::setTrackbarPos("High "+ x, window_detection_name, high_x);
 }
-static void on_low_y_thresh_trackbar(int, void *)
-{
+static void on_low_y_thresh_trackbar(int, void *) {
     low_y = std::min(high_y-1, low_y);
     cv::setTrackbarPos("Low "+ y, window_detection_name, low_y);
 }
-static void on_high_y_thresh_trackbar(int, void *)
-{
+static void on_high_y_thresh_trackbar(int, void *) {
     high_y = std::max(high_y, low_y+1);
     cv::setTrackbarPos("High "+ y, window_detection_name, high_y);
 }
@@ -100,32 +74,30 @@ static void on_low_z_thresh_trackbar(int, void *)
     low_z = std::min(high_z-1, low_z);
     cv::setTrackbarPos("Low "+ z, window_detection_name, low_z);
 }
-static void on_high_z_thresh_trackbar(int, void *)
-{
+static void on_high_z_thresh_trackbar(int, void *) {
     high_z = std::max(high_z, low_z+1);
     cv::setTrackbarPos("High "+ z, window_detection_name, high_z);
 }
 
 int main(int argc, char **argv){
-    
     int option;
-	std::cout << "Elija una opción:" << std::endl;
-	std::cout << "1. HSV \t 2. YCrCb \t 3. Lab \t 4. HSI" << std::endl;
-	std::cin >> option;
-	switch (option) {
-		case 1:
-			HSV();
-			break;
-		case 2:
-			YCrCb();
-			break;
-		case 3:
-			Lab();
-			break;
-		case 4:
-			HSI();
-			break;
-	} 
+    std::cout << "Elija una opción:" << std::endl;
+    std::cout << "1. HSV \t 2. HLS \t 3. Lab \t 4. YCrCb" << std::endl;
+    std::cin >> option;
+    switch (option) {
+        case 1:
+	    HSV();
+	    break;
+	case 2:
+            HSI();
+	    break;
+	case 3:
+	    Lab();
+	    break;
+	case 4:
+	    YCrCb();
+	    break;
+    } 
     
     ros::init(argc, argv, "showspaceColors");
     ros::NodeHandle n;
