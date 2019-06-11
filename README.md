@@ -47,7 +47,7 @@ Se habrán dado de alta los siguientes nodos:
 | showSiftFeat | Buscar y mostrar SIFT features | ???.cpp |
 | ballTracking | Buscar pelota | ???.cpp |
 | calibrate | Calibrate camera | ???.cpp |
-| faceDetectionHaas | Buscar HAAS features de caras | ???.cpp |
+| faceDetectionHaar | Detecta caras usando HAAR features | detectFaces.cpp |
 
 
 ## Ejemplo de ejecución

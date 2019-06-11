@@ -29,7 +29,11 @@ target_link_libraries(showDrawings ${catkin_LIBRARIES}
 add_executable(clickMe src/clickMe.cpp)
 target_link_libraries(clickMe ${catkin_LIBRARIES}
                               ${OpenCV_LIBRARIES})
-                              
-add_executable(showimagespaceColors src/simpleColorSegmentation.cpp)
-target_link_libraries(showimagespaceColors ${catkin_LIBRARIES}
-										                       ${OpenCV_LIBRARIES})
+
+add_executable(showHist src/computeHistogram.cpp)
+target_link_libraries(showHist ${catkin_LIBRARIES}
+                               ${OpenCV_LIBRARIES})
+
+add_executable(faceDetectionHaar src/detectFaces.cpp)
+target_link_libraries(faceDetectionHaar ${catkin_LIBRARIES}
+                                        ${OpenCV_LIBRARIES})
