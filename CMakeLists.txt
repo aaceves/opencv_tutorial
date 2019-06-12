@@ -38,6 +38,17 @@ add_executable(showHist src/computeHistogram.cpp)
 target_link_libraries(showHist ${catkin_LIBRARIES}
                                ${OpenCV_LIBRARIES})
 
+add_executable(read_write_file src/readWriteFile.cpp)
+target_link_libraries(read_write_file ${catkin_LIBRARIES}
+                                        ${OpenCV_LIBRARIES})
+
+# showBlobs
+# read_write_video
+# showSiftFeat
+# ballTracking
+# calibrateCam
+
+
 add_executable(faceDetectionHaar src/detectFaces.cpp)
 target_link_libraries(faceDetectionHaar ${catkin_LIBRARIES}
                                         ${OpenCV_LIBRARIES})
