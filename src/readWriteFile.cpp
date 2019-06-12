@@ -11,7 +11,7 @@ int main(int argc, char **argv){
 
     // To write in a file
     std::ofstream ofile_handler;
-    ofile_handler.open("colorSpace_thresholds.txt");
+    ofile_handler.open("colorSpace_thresholds.txt"); // Use: /home/kinetic/catkin_ws/src/opencv_tutorial/colorSpace_thresholds.txt
     if (ofile_handler.fail()) {
         std::cerr << "Error on creating file." << std::endl;
         exit(1);
