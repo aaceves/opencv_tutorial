@@ -38,12 +38,22 @@ add_executable(showHist src/computeHistogram.cpp)
 target_link_libraries(showHist ${catkin_LIBRARIES}
                                ${OpenCV_LIBRARIES})
 
-add_executable(read_write_file src/readWriteFile.cpp)
+add_executable(readWriteFile src/readWriteFile.cpp)
 target_link_libraries(read_write_file ${catkin_LIBRARIES}
-                                        ${OpenCV_LIBRARIES})
+                                      ${OpenCV_LIBRARIES})
 
-# showBlobs
-# read_write_video
+add_executable(showBlobs src/showBlobs.cpp)
+target_link_libraries(showBlobs ${catkin_LIBRARIES}
+                                ${OpenCV_LIBRARIES})
+
+add_executable(showVideo src/readWriteVideo.cpp)
+target_link_libraries(showVideo ${catkin_LIBRARIES}
+                                ${OpenCV_LIBRARIES})
+
+add_executable(cropMergeWrite src/cropMergeWrite.cpp)
+target_link_libraries(cropMergeWrite ${catkin_LIBRARIES}
+                                     ${OpenCV_LIBRARIES})
+
 # showSiftFeat
 # ballTracking
 # calibrateCam
