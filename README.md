@@ -45,7 +45,7 @@ Se habrán dado de alta los siguientes nodos:
 | read_save_file | Guardar y leer datos de un archivo | readWriteFile.cpp |
 | showBlobs | Agrupar pixels conectados | showBlobs.cpp |
 | showVideo | Lee y guarda video | readWriteVideo.cpp |
-| cropMergeWrite | Cortar, pegar y escribir en una image | cropMergeWrite.cpp |
+| cropMergeWrite | Crop, Write, Add, Split, Merge en una image | cropMergeWrite.cpp |
 | showSiftFeat | Buscar y mostrar SIFT features | ???.cpp |
 | ballTracking | Buscar pelota | ???.cpp |
 | calibrate | Calibrate camera | ???.cpp |
