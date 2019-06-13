@@ -2,7 +2,7 @@
 #include <opencv2/opencv.hpp>
 
 int main(int argc, char **argv){
-    ros::init(argc, argv, "read_write_file");
+    ros::init(argc, argv, "readWriteFile");
     ros::NodeHandle n;
     ros::Rate loop_rate(0.5);
     // -------------------------- INICIA CODIGO --------------------------
@@ -23,7 +23,8 @@ int main(int argc, char **argv){
     ofile_handler << "low_I  " << 555 << std::endl;
     ofile_handler << "high_I " << 654 << std::endl; // This is the last line
     ofile_handler.close();
-    std::cout << "File saved. Hit ENTER to continue ... " << std::endl;
+    std::cout << "File is saved in current directory." << std::endl;
+    std::cout << "Hit ENTER to continue ... " << std::endl;
     std::cin.get();
 
 
