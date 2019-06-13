@@ -44,7 +44,8 @@ Se habrán dado de alta los siguientes nodos:
 | showHist | Calcular histogramas | computeHistogram.cpp |
 | read_save_file | Guardar y leer datos de un archivo | readWriteFile.cpp |
 | showBlobs | Agrupar pixels conectados | showBlobs.cpp |
-| read_wirte_video | Lee y guarda video | ???.cpp |
+| showVideo | Lee y guarda video | readWriteVideo.cpp |
+| cropMerge | Crop, merge and write on image | cropMergeWrite.cpp |
 | showSiftFeat | Buscar y mostrar SIFT features | ???.cpp |
 | ballTracking | Buscar pelota | ???.cpp |
 | calibrate | Calibrate camera | ???.cpp |
