@@ -39,8 +39,8 @@ target_link_libraries(showHist ${catkin_LIBRARIES}
                                ${OpenCV_LIBRARIES})
 
 add_executable(readWriteFile src/readWriteFile.cpp)
-target_link_libraries(read_write_file ${catkin_LIBRARIES}
-                                      ${OpenCV_LIBRARIES})
+target_link_libraries(readWriteFile ${catkin_LIBRARIES}
+                                    ${OpenCV_LIBRARIES})
 
 add_executable(showBlobs src/showBlobs.cpp)
 target_link_libraries(showBlobs ${catkin_LIBRARIES}
