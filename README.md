@@ -33,7 +33,7 @@ El proceso de compilación debe terminar sin errores.
 
 Se habrán dado de alta los siguientes nodos:
 
-| <node_name> | Descripción | file.cpp |
+| <node_name> | Descripción | ./src/file |
 | --- | --- | --- |
 | showGray | Lee un archivo jpg y lo pasa a grises | toGray.cpp | 
 | showSegmentation | Segmenta la imagen de la webcam en HSV | simpleColorSegmentation.cpp |
