@@ -54,8 +54,11 @@ add_executable(cropMergeWrite src/cropMergeWrite.cpp)
 target_link_libraries(cropMergeWrite ${catkin_LIBRARIES}
                                      ${OpenCV_LIBRARIES})
 
+add_executable(ballTracking src/detecBall.cpp)
+target_link_libraries(ballTracking ${catkin_LIBRARIES}
+                                   ${OpenCV_LIBRARIES})
+                                     
 # showSiftFeat
-# ballTracking
 # calibrateCam
 
 
