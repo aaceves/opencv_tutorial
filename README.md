@@ -47,7 +47,7 @@ Se habrán dado de alta los siguientes nodos:
 | showVideo | Lee y guarda video | readWriteVideo.cpp |
 | cropMergeWrite | Crop, Write, Add, Split, Merge en una image | cropMergeWrite.cpp |
 | showSiftFeat | Buscar y mostrar SIFT features | ???.cpp |
-| ballTracking | Buscar pelota dentro de alfombra verde | detect_ball.cpp |
+| ballTracking | Buscar pelota dentro de alfombra verde | detectBall.cpp |
 | calibrate | Calibrate camera | ???.cpp |
 | faceDetectionHaar | Detecta caras usando HAAR features | detectFaces.cpp |
 
