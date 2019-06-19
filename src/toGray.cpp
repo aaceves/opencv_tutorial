@@ -10,9 +10,10 @@ int main(int argc, char **argv){
     cv::Mat image;
     cv::Mat gray_image;
 
-    image = cv::imread("/home/kinetic/catkin_ws/src/opencv_tutorial/img/red_panda.jpg"); 
+    std::string path_image = "/home/alex/catkin_ws/src/opencv_tutorial/img/red_panda.jpg";
+    image = cv::imread(path_image); 
     if (image.empty()) { // or (!image.data)
-        std::cout << "Error al cargar imagen."<< std::endl;
+        std::cout << "Error al cargar imagen: "<< path_image << ". ¿La dirección es correcta?" << std::endl;
         exit(1);
     }
     std::cout << "Height : " << image.rows << std::endl;  // or image.size().height
