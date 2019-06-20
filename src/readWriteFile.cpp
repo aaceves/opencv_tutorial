@@ -23,7 +23,7 @@ int main(int argc, char **argv){
     ofile_handler << "low_I  " << 555 << std::endl;
     ofile_handler << "high_I " << 654 << std::endl; // This is the last line
     ofile_handler.close();
-    std::cout << "File is saved in current directory." << std::endl;
+    std::cout << "File was saved in current directory." << std::endl;
     std::cout << "Hit ENTER to continue ... " << std::endl;
     std::cin.get();
 
