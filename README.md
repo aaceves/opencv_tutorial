@@ -13,7 +13,7 @@ Deberá de ver la imagen de la cámara. En caso contrario significa que no tiene
 
 Para asegurarse que se tiene correctamente instalado OpenCV, ejecutar la siguiente instrucción en una Terminal:
 ```
-pkg-config –-modversion opencv
+pkg-config --modversion opencv
 ```
 Debe responder con la versión de OpenCV. En caso que no tenga instalado OpenCV, ejecutar:
 ```
