@@ -1,6 +1,3 @@
-//#include "opencv2/objdetect/objdetect.hpp"
-//#include "opencv2/highgui/highgui.hpp"
-//#include "opencv2/imgproc/imgproc.hpp"
 #include "ros/ros.h"
 #include <opencv2/opencv.hpp>
 	
@@ -93,7 +90,7 @@ int main(int argc, char **argv){
             imshow("Bounding Box",frame);
 
             // Press 'c' to escape
-            if( waitKey(10) )  break;
+            if( waitKey(10) == 'c' )  break;
         }
     }
     cv::destroyAllWindows();
