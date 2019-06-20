@@ -10,10 +10,11 @@ int main(int argc, char **argv){
     // And: http://opencvexamples.blogspot.com/2013/10/split-and-merge-functions.html
     // And: http://acodigo.blogspot.com/2018/01/opencv-uso-de-las-funciones-split-y.html
 
+    std::string path_file = "/home/alex/catkin_ws/src/opencv_tutorial/img/red_panda.jpg";
     cv::Mat image, nose, image_c, image_m;
-    image = cv::imread("/home/kinetic/catkin_ws/src/opencv_tutorial/img/red_panda.jpg"); 
+    image = cv::imread(path_file); 
     if (image.empty()) { // or (!image.data)
-        std::cout << "Error al cargar imagen."<< std::endl;
+        std::cout << "Error al cargar imagen." << path_file << std::endl;
         exit(1);
     }
 
