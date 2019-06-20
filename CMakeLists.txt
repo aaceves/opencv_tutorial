@@ -57,10 +57,6 @@ target_link_libraries(cropMergeWrite ${catkin_LIBRARIES}
 add_executable(ballTracking src/detectBall.cpp)
 target_link_libraries(ballTracking ${catkin_LIBRARIES}
                                    ${OpenCV_LIBRARIES})
-                                     
-# showSiftFeat
-# calibrateCam
-
 
 add_executable(faceDetectionHaar src/detectFaces.cpp)
 target_link_libraries(faceDetectionHaar ${catkin_LIBRARIES}
