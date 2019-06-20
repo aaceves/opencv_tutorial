@@ -8,10 +8,10 @@ int main(int argc, char **argv){
     // -------------------------- INICIA CODIGO DE OPENCV --------------------------
     // Based on: https://www.learnopencv.com/read-write-and-display-a-video-using-opencv-cpp-python/
 
-
-    cv::VideoCapture cap("/home/kinetic/catkin_ws/src/opencv_tutorial/img/red_panda_snow.mp4"); // Create a video object
+    std::string path_file = "/home/alex/catkin_ws/src/opencv_tutorial/img/red_panda_snow.mp4";
+    cv::VideoCapture cap( path_file ); // Create a video object
     if(!cap.isOpened()) {
-        std::cout << "Error opening video stream or file" << std::endl;
+        std::cout << "Error opening video stream or file" << path_file << std::endl;
         return -1;
     }
 
@@ -33,7 +33,7 @@ int main(int argc, char **argv){
         cv::flip(frame,fliped_frame,1);  // Flip image 0=horizontal, 1=vertical    
         video.write(fliped_frame); // Write the frame into the file 'outcpp.avi'
         cv::imshow( "Original Video", frame );
-        if(cv::waitKey(1)==27)
+        if(cv::waitKey(10)==27)
             break; // Press ESC on keyboard to exit
     }
     cap.release();  // Release the video capture object
