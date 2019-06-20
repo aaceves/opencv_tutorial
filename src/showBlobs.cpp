@@ -26,9 +26,10 @@ int main(int argc, char **argv){
     // and: https://answers.opencv.org/question/170527/how-to-get-the-pixel-value-by-clicking-on-image/
 
     // Read image
-    cv::Mat im = cv::imread( "/home/kinetic/catkin_ws/src/opencv_tutorial/img/OpenCV_logo.jpg");
+    std::string path_file = "/home/alex/catkin_ws/src/opencv_tutorial/img/OpenCV_logo.jpg";
+    cv::Mat im = cv::imread( path_file );
     if (im.empty()) {
-        std::cout << "Error abriendo archivo" << std::endl;
+        std::cout << "Error abriendo archivo: " << path_file << std::endl;
         exit(1);
     }
 
@@ -82,8 +83,9 @@ int main(int argc, char **argv){
                extracted_blob.at<uchar>(r,c) = 255;
         }
     }
+    cv::namedWindow("Extracted Component");
     cv::imshow("Extracted Component", extracted_blob);
-
+    std::cout  << "\n Hit ENTER in any image to exit." << std::endl;
     cv::waitKey(0);
     cv::destroyAllWindows();
     // -------------------------- TERMINA CODIGO DE OPENCV --------------------------
