@@ -54,6 +54,10 @@ add_executable(cropMergeWrite src/cropMergeWrite.cpp)
 target_link_libraries(cropMergeWrite ${catkin_LIBRARIES}
                                      ${OpenCV_LIBRARIES})
 
+add_executable(findContours src/findContours.cpp)
+target_link_libraries(findContours ${catkin_LIBRARIES}
+                                   ${OpenCV_LIBRARIES})
+                                   
 add_executable(ballTracking src/detectBall.cpp)
 target_link_libraries(ballTracking ${catkin_LIBRARIES}
                                    ${OpenCV_LIBRARIES})
