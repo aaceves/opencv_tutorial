@@ -5,6 +5,7 @@ Tutorial de OpenCV escrito en C++ dentro de ROS con la intensión de facilitar e
 
 REVISAR: https://www.codeproject.com/Articles/526218/An-introduction-to-OpenCV-Part-II-Implementing-mou
 https://www.opencv-srf.com/2011/11/mouse-events.html
+https://funvision.blogspot.com/2016/02/opencv-31-tutorial-optical-flow.html
 
 ## Pre-requisitos
 Se considera que la computadora del usuario ya tiene correctamente instalado ROS, GIT y que ya tiene la carpeta de `catkin_ws` correctamente inicializada.
