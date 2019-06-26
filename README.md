@@ -48,6 +48,7 @@ Se habrán dado de alta los siguientes nodos:
 | cropMergeWrite | Crop, Write, Add, Split, Merge en una image | cropMergeWrite.cpp |
 | ballTracking | Buscar pelota dentro de alfombra verde | detectBall.cpp |
 | faceDetectionHaar | Detecta caras usando HAAR features | detectFaces.cpp |
+| showTime | Formas de medir el tiempo de un proceso | measureTime.cpp |
 | showSiftFeat | Buscar y mostrar SIFT features | ???.cpp |
 
 ## Ejemplo de ejecución
