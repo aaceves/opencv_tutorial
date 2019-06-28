@@ -65,3 +65,19 @@ target_link_libraries(ballTracking ${catkin_LIBRARIES}
 add_executable(faceDetectionHaar src/detectFaces.cpp)
 target_link_libraries(faceDetectionHaar ${catkin_LIBRARIES}
                                         ${OpenCV_LIBRARIES})
+
+add_executable(showTime src/measureTime.cpp)
+target_link_libraries(showTime ${catkin_LIBRARIES}
+                               ${OpenCV_LIBRARIES})
+
+add_executable(opticalFlow src/opticalFlow.cpp)
+target_link_libraries(opticalFlow ${catkin_LIBRARIES}
+                                  ${OpenCV_LIBRARIES})
+
+add_executable(tracking src/tracking.cpp)
+target_link_libraries(tracking ${catkin_LIBRARIES}
+                               ${OpenCV_LIBRARIES})
+
+#add_executable(showSiftFeat src/simpleSIFTmatcher.cpp)
+#target_link_libraries(showSiftFeat ${catkin_LIBRARIES}
+#                                   ${OpenCV_LIBRARIES})
