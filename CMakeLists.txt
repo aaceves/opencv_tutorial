@@ -78,6 +78,10 @@ add_executable(tracking src/tracking.cpp)
 target_link_libraries(tracking ${catkin_LIBRARIES}
                                ${OpenCV_LIBRARIES})
 
+add_executable(detectMouse src/detectMouse.cpp)
+target_link_libraries(detectMouse ${catkin_LIBRARIES}
+                                  ${OpenCV_LIBRARIES})
+
 #add_executable(showSiftFeat src/simpleSIFTmatcher.cpp)
 #target_link_libraries(showSiftFeat ${catkin_LIBRARIES}
 #                                   ${OpenCV_LIBRARIES})
