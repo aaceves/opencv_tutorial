@@ -3,10 +3,6 @@
 ## Descripción general
 Tutorial de OpenCV escrito en C++ dentro de ROS con la intensión de facilitar el trabajo a los nuevos programadores.
 
-REVISAR: https://www.codeproject.com/Articles/526218/An-introduction-to-OpenCV-Part-II-Implementing-mou
-https://www.opencv-srf.com/2011/11/mouse-events.html
-https://funvision.blogspot.com/2016/02/opencv-31-tutorial-optical-flow.html
-
 ## Pre-requisitos
 Se considera que la computadora del usuario ya tiene correctamente instalado ROS, GIT y que ya tiene la carpeta de `catkin_ws` correctamente inicializada.
 Para asegurarse que se tiene un dispositivo de video, ejecutar en una Terminal:
@@ -52,7 +48,10 @@ Se habrán dado de alta los siguientes nodos:
 | cropMergeWrite | Crop, Write, Add, Split, Merge en una image | cropMergeWrite.cpp |
 | ballTracking | Buscar pelota dentro de alfombra verde | detectBall.cpp |
 | faceDetectionHaar | Detecta caras usando HAAR features | detectFaces.cpp |
-| showTime | Formas de medir el tiempo de un proceso | measureTime.cpp |
+| showTime | Varias formas de medir el tiempo de un proceso | measureTime.cpp |
+| opticalFlow | Calcula el flujo óptico en un video o webcam | opticalFlow.cpp |
+| tracking | Busca un objeto usando el algoritmo de Lucas-Kanade | tracking.cpp |
+| detectMouse | Detecta los eventos del mouse dentro de una image | detectMouse.cpp |
 | showSiftFeat | Buscar y mostrar SIFT features | ???.cpp |
 
 ## Ejemplo de ejecución
